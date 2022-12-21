@@ -1,7 +1,9 @@
 ``` bash
 ./gradlew build
 ```
-
+``` bash
+docker run -v $(pwd):/fuzzing cifuzz/jazzer --cp=build/libs/jazzer-docker-example-1.0-SNAPSHOT.jar --target_class=com.example.FuzzTestCase
+```
 ``` bash
 ./gradlew clean build -x test 
 ```
