@@ -1,4 +1,8 @@
 ``` bash
+./gradlew build
+```
+
+``` bash
 ./gradlew clean build -x test 
 ```
 
