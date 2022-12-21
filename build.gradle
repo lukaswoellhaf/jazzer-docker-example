@@ -12,6 +12,10 @@ jar {
     }
 }
 
+tasks.jar {
+    from(sourceSets["test"].output)
+}
+
 repositories {
     mavenCentral()
 }
